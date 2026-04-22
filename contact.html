@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Istoria automobilelor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="fixed-header">
+    <div class="header-container">
+        <div class="site-title">
+            <i class="fas fa-car-side"></i> Istoria automobilelor
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="istorie.html">Istorie</a>
+            <a href="bibliografie.html">Bibliografie</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </div>
+</div>
+
+<main class="main-content">
+    <div class="page-header">
+        <h1><i class="fas fa-envelope"></i> Contact</h1>
+        <p>Ai întrebări, sugestii sau vrei să contribui cu informații? Scrie-ne!</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Adresă</h3>
+                <p>Bulevardul Automobilului 1886<br>Sector 1, București, România</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Telefon</h3>
+                <p>+40 123 456 789<br>Luni-Vineri: 10:00 - 18:00</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>contact@istoriaautomobilelor.ro<br>suport@istoriaautomobilelor.ro</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nume"><i class="fas fa-user"></i> Nume complet</label>
+                    <input type="text" id="nume" name="nume" required placeholder="Ex: Andrei Popescu">
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Adresă email</label>
+                    <input type="email" id="email" name="email" required placeholder="andrei@exemplu.ro">
+                </div>
+                <div class="form-group">
+                    <label for="subiect"><i class="fas fa-tag"></i> Subiect</label>
+                    <select id="subiect" name="subiect">
+                        <option value="intrebare">Întrebare generală</option>
+                        <option value="corectura">Corectură informații</option>
+                        <option value="colaborare">Propunere colaborare</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mesaj"><i class="fas fa-comment"></i> Mesaj</label>
+                    <textarea id="mesaj" name="mesaj" rows="6" required placeholder="Scrie mesajul tău aici..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Trimite mesaj</button>
+            </form>
+            <p class="form-notice">*Toate câmpurile sunt obligatorii. Vom răspunde în maxim 48 de ore.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2025 Istoria automobilelor · Cafea, istorie și supercaruri</p>
+</footer>
+
+</body>
+</html>
