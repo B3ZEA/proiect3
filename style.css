@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f1e4;
+    background-image: radial-gradient(circle at 10% 20%, rgba(100, 65, 35, 0.04) 2%, transparent 2.5%),
+                      radial-gradient(circle at 85% 65%, rgba(80, 50, 25, 0.03) 1.8%, transparent 2%);
+    background-size: 55px 55px, 70px 70px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #2c241a;
+    line-height: 1.5;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff8ef;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    border-bottom: 2px solid #e2cfb3;
+}
+
+.header-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #7a4b2a, #b47c44);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.site-title i {
+    color: #b47c44;
+    margin-right: 8px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #5a3e28;
+    transition: 0.2s;
+    padding: 0.3rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #b1622c;
+    border-bottom-color: #c2895e;
+}
+
+.main-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 7rem 2rem 4rem 2rem;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 245, 235, 0.6);
+    border-radius: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-family: 'Playfair Display', serif;
+    color: #4d311b;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #7a5a3e;
+    font-style: italic;
+}
+
+.timeline-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0 3rem;
+    background: rgba(250, 243, 230, 0.7);
+    border-radius: 3rem;
+    padding: 2rem;
+    border: 1px solid #e6d5be;
+}
+
+.car-card {
+    flex: 1;
+    min-width: 280px;
+    background: #fffcf5;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 5px 
